@@ -1,128 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/assest/Logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Baedy</title>
-  </head>
-  <body>
-   <header
-      class="w-full max-w-7xl fixed top-[43px] left-1/2 transform -translate-x-1/2 bg-[rgba(18,18,18,0.6)] backdrop-blur-2xl rounded-[74px] px-[30px] lg:px-[100px] py-3 flex justify-between items-center z-50 border border-white font-inter"
-    >
-      <!-- Logo -->
-      <div class="w-1/4">
-        <img
-          src="./assest/logo2.png"
-          alt="baedy logo"
-          class="w-[25px] h-[30px] md:w-[40px] md:h-[50px]"
-        />
-      </div>
 
-      <!-- Desktop Nav -->
-      <div class="hidden md:flex justify-between w-3/4 text-white">
-        <nav>
-          <ul class="flex gap-6">
-              <li class="py-[20px] px-[12px] gap-[10px] text-[14px] font-normal overflow-hidden h-[50px]">
-                <a href="/">Home</a>
-                <div class="w-full h-[3px] bg-[#7B310C] translate-y-[overfo[20px] bottom-line ">
-              </li>
-              <li class="py-[20px] px-[12px] gap-[10px] text-[14px] font-normal">
-                <a href="#aboutUs">About Us</a>
-                <div class="w-full h-[3px] bg-[#7B310C] translate-y-[overfo[20px] bottom-line "></div>
-              </li>
-              <li class="py-[20px] px-[12px] gap-[10px] text-[14px] font-normal">
-                <a href="#shoutOut">Shoutouts</a>
-                <div class="w-full h-[3px] bg-[#7B310C] translate-y-[overfo[20px] bottom-line "></div>
-              </li>
-              <li class="py-[20px] px-[12px] gap-[10px] text-[14px] font-normal">
-                <a href="#contact">Contacts Us</a>
-                <div class="w-full h-[3px] bg-[#7B310C] translate-y-[overfo[20px] bottom-line "></div>
-              </li>
-          </ul>
-        </nav>
-        <ul class="flex gap-6 items-center">
-            <li class="py-[20px] px-[12px] gap-[10px] text-[14px] font-normal text-white">
-                <a href="/login">Login</a>
-                <div class="w-full h-[3px] bg-[#7B310C] translate-y-[overfo[20px] bottom-line "></div>
-            </li>
-            <li>
-              <a href="/register" class="btn-primary">Join Us</a>
-            </li>
-        </ul>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/assest/Logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Baedy</title>
+</head>
 
-      <!-- Hamburger (Mobile) -->
-      <button class="md:hidden text-white" onclick="toggleMobileMenu()">
-        <svg
-          class="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M4 6h16M4 12h16M4 18h16"
-          ></path>
-        </svg>
-      </button>
-    </header>
+<body>
+  <header
+    class="w-full max-w-7xl fixed top-[43px] left-1/2 transform -translate-x-1/2 bg-[rgba(18,18,18,0.6)] backdrop-blur-2xl rounded-[74px] px-[30px] lg:px-[100px] py-3 flex justify-between items-center z-50 border border-white font-inter">
+    <!-- Logo -->
+    <div class="w-1/4">
+      <img src="./assest/logo2.png" alt="baedy logo" class="w-[25px] h-[30px] md:w-[40px] md:h-[50px]" />
+    </div>
 
-    <!-- Mobile Dropdown Menu -->
-    <div
-  id="mobile-menu"
-  class="md:hidden fixed top-[100px] left-4 right-4 bg-[rgba(18,18,18,0.5)] backdrop-blur-2xl] border border-white rounded-xl p-6 text-white z-40"
->
-      <ul class="flex flex-col gap-4 text-center">
-          <li class="py-[2px] px-[12px] gap-[10px] text-[14px] font-normal overflow-hidden">
+    <!-- Desktop Nav -->
+    <div class="hidden md:flex justify-between w-3/4 text-white">
+      <nav>
+        <ul class="flex gap-6">
+          <li class="py-[20px] px-[12px] gap-[10px] text-[14px] font-normal overflow-hidden h-[50px]">
             <a href="/">Home</a>
             <div class="w-full h-[3px] bg-[#7B310C] translate-y-[overfo[20px] bottom-line ">
           </li>
-          <li class="py-[2px] px-[12px] gap-[10px] text-[14px] font-normal">
+          <li class="py-[20px] px-[12px] gap-[10px] text-[14px] font-normal">
             <a href="#aboutUs">About Us</a>
             <div class="w-full h-[3px] bg-[#7B310C] translate-y-[overfo[20px] bottom-line "></div>
           </li>
-          <li class="py-[2px] px-[12px] gap-[10px] text-[14px] font-normal">
+          <li class="py-[20px] px-[12px] gap-[10px] text-[14px] font-normal">
             <a href="#shoutOut">Shoutouts</a>
             <div class="w-full h-[3px] bg-[#7B310C] translate-y-[overfo[20px] bottom-line "></div>
           </li>
-          <li class="py-[2px] px-[12px] gap-[10px] text-[14px] font-normal">
+          <li class="py-[20px] px-[12px] gap-[10px] text-[14px] font-normal">
             <a href="#contact">Contacts Us</a>
             <div class="w-full h-[3px] bg-[#7B310C] translate-y-[overfo[20px] bottom-line "></div>
           </li>
-      </ul>
-      <div class="flex justify-center gap-4 mt-6">
-        <ul class="flex gap-6 items-center">
-            <li class="py-[20px] px-[12px] gap-[10px] text-[14px] font-normal text-white">
-                <a href="/login">Login</a>
-                <div class="w-full h-[3px] bg-[#7B310C] translate-y-[overfo[20px] bottom-line "></div>
-            </li>
-            <li>
-              <a href="/register" class="btn-primary">Join Us</a>
-            </li>
         </ul>
-      </div>
+      </nav>
+      <ul class="flex gap-6 items-center">
+        <li class="py-[20px] px-[12px] gap-[10px] text-[14px] font-normal text-white">
+          <a href="/login">Login</a>
+          <div class="w-full h-[3px] bg-[#7B310C] translate-y-[overfo[20px] bottom-line "></div>
+        </li>
+        <li>
+          <a href="/register" class="btn-primary">Join Us</a>
+        </li>
+      </ul>
     </div>
-    <main>
-      <section id="home" class="hero-section absolute inset-0 w-full h-full">
 
-        <div class="bg-overlay bg-black opacity-70 w-full h-full absolute inset-0 text-center"></div>
+    <!-- Hamburger (Mobile) -->
+    <button class="md:hidden text-white" onclick="toggleMobileMenu()">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </header>
 
-        <div class="hero-content relative z-10 text-center flex flex-col items-center text-white max-w-[819px] lg:top-[222px]  top-[180px] mx-auto gap-6">
-          <h1 class="hero-text font-bold text-[32px] md:text-[56px] text-center text-white">Celebrate Life’s Moments <br> with Exciting Rewards!</h1>
-          <p class="font-normal text-[14px] mb-2 text-[#D1D1D1]">Join us to unlock monthly rewards for your special occasions. Experience the thrill of our game <br>shows and celebrate with friends and family!</p>
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu"
+    class="md:hidden fixed top-[100px] left-4 right-4 bg-[rgba(18,18,18,0.5)] backdrop-blur-2xl border border-white rounded-xl p-6 text-white z-40">
+    <ul class="flex flex-col gap-4 text-center">
+      <li class="py-[2px] px-[12px] gap-[10px] text-[14px] font-normal overflow-hidden">
+        <a href="/">Home</a>
+        <div class="w-full h-[3px] bg-[#7B310C] translate-y-[overfo[20px] bottom-line ">
+      </li>
+      <li class="py-[2px] px-[12px] gap-[10px] text-[14px] font-normal">
+        <a href="#aboutUs">About Us</a>
+        <div class="w-full h-[3px] bg-[#7B310C] translate-y-[overfo[20px] bottom-line "></div>
+      </li>
+      <li class="py-[2px] px-[12px] gap-[10px] text-[14px] font-normal">
+        <a href="#shoutOut">Shoutouts</a>
+        <div class="w-full h-[3px] bg-[#7B310C] translate-y-[overfo[20px] bottom-line "></div>
+      </li>
+      <li class="py-[2px] px-[12px] gap-[10px] text-[14px] font-normal">
+        <a href="#contact">Contacts Us</a>
+        <div class="w-full h-[3px] bg-[#7B310C] translate-y-[overfo[20px] bottom-line "></div>
+      </li>
+    </ul>
+    <div class="flex justify-center gap-4 mt-6">
+      <ul class="flex gap-6 items-center">
+        <li class="py-[20px] px-[12px] gap-[10px] text-[14px] font-normal text-white">
+          <a href="/login">Login</a>
+          <div class="w-full h-[3px] bg-[#7B310C] translate-y-[overfo[20px] bottom-line "></div>
+        </li>
+        <li>
+          <a href="/register" class="btn-primary">Join Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <main>
+    <section id="home" class="hero-section w-full h-screen relative overflow-hidden">
+      <div class="w-full h-full bg-cover bg-center relative" style="background-image: url('./assest/hero-bg.png');">
+        <div class="bg-black opacity-70 absolute inset-0 z-0"></div>
+        <div
+          class="hero-content relative z-10 text-center flex flex-col items-center text-white max-w-[819px] lg:top-[222px] top-[180px] mx-auto gap-6">
+          <h1 class="hero-text font-bold text-[32px] md:text-[56px] text-center text-white">Celebrate Life’s Moments
+            <br> with Exciting Rewards!</h1>
+          <p class="font-normal text-[14px] mb-2 text-[#D1D1D1]">Join us to unlock monthly rewards for your special
+            occasions. Experience the thrill of our game <br>shows and celebrate with friends and family!</p>
           <div class="flex gap-6">
             <a href="/register" class="btn-primary">Subscribe </a>
             <a href="/register" class="btn-secondary">Learn More </a>
           </div>
         </div>
-      </section>
-    </main>
-    <script src="main.js"></script>
-  </body>
+
+      </div>
+    </section>
+    <section class="w-full h-full bg-white py-[100px] ">
+      <div class="max-w-[819px] gap-6 mx-auto flex flex-col">
+        <h2 class="font-bold text-[40px] text-center text-black">Unlock Joy with Every Celebration You Make!</h2>
+        <p class="text-[18px] font-normal leading-8 text-[#121212] text-center">Experience the thrill of celebrating life’s milestones with exciting rewards. From birthdays to anniversaries, our service brings joy and unforgettable moments right to your doorstep.</p>
+
+      </div>
+    </section>
+
+  </main>
+  <script src="main.js"></script>
+</body>
+
 </html>
