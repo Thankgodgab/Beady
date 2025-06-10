@@ -72,6 +72,6 @@ li:hover .bottom-line {
     background-repeat: no-repeat;
 
 }
-.hero-content h1{
+h1, h2{
   font-family: var(--font-jost);
 }
