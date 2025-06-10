@@ -97,13 +97,16 @@
 
 
   <main>
+
+    <!-- HERO SECTION -->
     <section id="home" class="hero-section w-full h-screen relative overflow-hidden">
       <div class="w-full h-full bg-cover bg-center relative" style="background-image: url('./assets/hero-bg.png');">
         <div class="bg-black opacity-70 absolute inset-0 z-0"></div>
         <div
           class="hero-content relative z-10 text-center flex flex-col items-center text-white max-w-[819px] lg:top-[222px] top-[180px] mx-auto gap-6">
           <h1 class="hero-text font-bold text-[32px] md:text-[56px] text-center text-white">Celebrate Life’s Moments
-            <br> with Exciting Rewards!</h1>
+            <br> with Exciting Rewards!
+          </h1>
           <p class="font-normal text-[14px] mb-2 text-[#D1D1D1]">Join us to unlock monthly rewards for your special
             occasions. Experience the thrill of our game <br>shows and celebrate with friends and family!</p>
           <div class="flex gap-6">
@@ -114,20 +117,31 @@
 
       </div>
     </section>
+
+    <!-- CELEBRATION SECTION -->
     <section class="px-2 sm:px-8 lg:px-10 w-full h-full bg-white py-[100px] ">
       <div class="max-w-[819px] gap-6 mx-auto flex flex-col">
         <h2 class="font-bold text-[40px] text-center text-black">Unlock Joy with Every Celebration You Make!</h2>
-        <p class="text-[18px] font-normal leading-8 text-[#121212] text-center">Experience the thrill of celebrating life’s milestones with exciting rewards. From birthdays to anniversaries, our service brings joy and unforgettable moments right to your doorstep.</p>
+        <p class="text-[18px] font-normal leading-8 text-[#121212] text-center">Experience the thrill of celebrating
+          life’s milestones with exciting rewards. From birthdays to anniversaries, our service brings joy and
+          unforgettable moments right to your doorstep.</p>
 
       </div>
     </section>
-    <section id="about" class="px-2 sm:px-8 lg:px-10 w-full h-full py-[100px]">
-      <div class="md:left-[100px] grid grid-cols-1 lg:grid-cols-2 gap-16">
-        <div class="flex gap-6 flex-col order-last lg:order-first">
-          <h3 class="text-[16px] font-normal text-[#121212] leading-8">About Us</h3>
-          <h2 class="text-[40px] font-bold text-[#121212] ">Crafting Unforgettable Moments, One Event at a Time</h2>
-          <p class="font-normal text-[18px] leading-8 text-[#4F4F4F]"></p>
-          <div class="grid grid-cols-2 gap-6">
+
+    <!-- ABOUT US -->
+    <section id="about" class="px-8 lg:px-10 w-full h-full py-[100px] flex items-center justify-center">
+
+      <!-- DESKTOP VIEW -->
+      <div class=" md:grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="flex gap-6 flex-col  justify-center">
+          <h3 class="text-[16px] font-normal text-[#121212] leading-8 text-left">About Us</h3>
+          <h2 class="text-[28px] md:text-[40px] font-bold text-[#121212] ">Crafting Unforgettable Moments, One Event at
+            a Time</h2>
+          <img src="./assets/aboutUs-img.png" alt="about-us image"
+          class="h-[350px] w-[340px] rounded-tl-[14px] rounded-[14px] bg-[#D9D9D9] shadow-[0_20px_4px_0_#FC9A04] md:hidden">
+          <p class="font-normal text-[18px] leading-8 text-[#4F4F4F] mt-4">At Baedy, we transform ideas into unforgettable experiences. From corporate gatherings and luxury weddings to community festivals and private parties, we bring creativity, precision, and passion to every event we touch.</p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div class="p-6 rounded-lg bg-[#F6F6F6]">
               <h2 class="font-bold text-[36px] text-[#121212]">10+</h2>
               <h3 class="font-normal text-16px leading-6 text-[#121212]">Years of Event Planning</h3>
@@ -146,9 +160,16 @@
             </div>
           </div>
         </div>
-          <img src="./assets/aboutUs-img.png" alt="about-us image" class="order-first lg:order-last h-[546px] rounded-tl-[14px] rounded-bl-[14px] bg-[#D9D9D9] shadow-[0_20px_4px_0_#FC9A04]">
+        <img src="./assets/aboutUs-img.png" alt="about-us image"
+          class="h-[420px] w-[553px] rounded-tl-[14px] rounded-bl-[14px] bg-[#D9D9D9] shadow-[0_20px_4px_0_#FC9A04] hidden md:flex self-center">
       </div>
+
+      <!-- MOOBILE VIEW -->
+
+
     </section>
+
+
     <!-- SHOUTOUTS SECTION  -->
     <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#f6f0d5" fill-opacity="1"
