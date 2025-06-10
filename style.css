@@ -24,7 +24,8 @@
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-li:hover .bottom-line {
+li:hover .bottom-line,
+li:active .bottom-line {
     transform: translateY(0px);
     opacity: 1;
 }
