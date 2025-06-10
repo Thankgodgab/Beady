@@ -3,10 +3,11 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/assest/Logo.svg" />
+  <link rel="icon" type="image/svg+xml" href="/assets/Logo.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <title>Baedy</title>
 </head>
 
@@ -15,7 +16,7 @@
     class="w-full max-w-7xl fixed top-[43px] left-1/2 transform -translate-x-1/2 bg-[rgba(18,18,18,0.6)] backdrop-blur-2xl rounded-[74px] px-[30px] lg:px-[100px] py-3 flex justify-between items-center z-50 border border-white font-inter">
     <!-- Logo -->
     <div class="w-1/4">
-      <img src="./assest/logo2.png" alt="baedy logo" class="w-[25px] h-[30px] md:w-[40px] md:h-[50px]" />
+      <img src="./assets/logo2.png" alt="baedy logo" class="w-[25px] h-[30px] md:w-[40px] md:h-[50px]" />
     </div>
 
     <!-- Desktop Nav -->
@@ -62,7 +63,7 @@
 
   <!-- Mobile Dropdown Menu -->
   <div id="mobile-menu"
-    class="md:hidden fixed top-[100px] left-4 right-4 bg-[rgba(18,18,18,0.5)] backdrop-blur-2xl border border-white rounded-xl p-6 text-white z-40">
+    class="md:hidden fixed top-[100px] left-4 right-4 bg-[rgba(18,18,18,0.5)] backdrop-blur-2xl] border border-white rounded-xl p-6 text-white z-40">
     <ul class="flex flex-col gap-4 text-center">
       <li class="py-[2px] px-[12px] gap-[10px] text-[14px] font-normal overflow-hidden">
         <a href="/">Home</a>
@@ -93,37 +94,493 @@
       </ul>
     </div>
   </div>
-
-
-
   <main>
-    <section id="home" class="hero-section w-full h-screen relative overflow-hidden">
-      <div class="w-full h-full bg-cover bg-center relative" style="background-image: url('./assest/hero-bg.png');">
-        <div class="bg-black opacity-70 absolute inset-0 z-0"></div>
-        <div
-          class="hero-content relative z-10 text-center flex flex-col items-center text-white max-w-[819px] lg:top-[222px] top-[180px] mx-auto gap-6">
-          <h1 class="hero-text font-bold text-[32px] md:text-[56px] text-center text-white">Celebrate Life’s Moments
-            <br> with Exciting Rewards!</h1>
-          <p class="font-normal text-[14px] mb-2 text-[#D1D1D1]">Join us to unlock monthly rewards for your special
-            occasions. Experience the thrill of our game <br>shows and celebrate with friends and family!</p>
-          <div class="flex gap-6">
-            <a href="/register" class="btn-primary">Subscribe </a>
-            <a href="/register" class="btn-secondary">Learn More </a>
+    <section id="home" class="hero-section absolute inset-0 w-full h-full">
+
+      <div class="bg-overlay bg-black opacity-70 w-full h-full absolute inset-0 text-center"></div>
+
+      <div
+        class="hero-content relative z-10 text-center flex flex-col items-center text-white max-w-[819px] lg:top-[222px]  top-[180px] mx-auto gap-6">
+        <h1 class="hero-text font-bold text-[32px] md:text-[56px] text-center text-white">Celebrate Life’s Moments <br>
+          with Exciting Rewards!</h1>
+        <p class="font-normal text-[14px] mb-2 text-[#D1D1D1]">Join us to unlock monthly rewards for your special
+          occasions. Experience the thrill of our game <br>shows and celebrate with friends and family!</p>
+        <div class="flex gap-6">
+          <a href="/register" class="btn-primary">Subscribe </a>
+          <a href="/register" class="btn-secondary">Learn More </a>
+        </div>
+      </div>
+    </section>
+
+    <body>
+      <!-- SHOUTOUTS SECTION  -->
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#f6f0d5" fill-opacity="1"
+          d="M0,192L21.8,186.7C43.6,181,87,171,131,160C174.5,149,218,139,262,149.3C305.5,160,349,192,393,170.7C436.4,149,480,75,524,48C567.3,21,611,43,655,80C698.2,117,742,171,785,165.3C829.1,160,873,96,916,74.7C960,53,1004,75,1047,117.3C1090.9,160,1135,224,1178,261.3C1221.8,299,1265,309,1309,293.3C1352.7,277,1396,235,1418,213.3L1440,192L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z">
+        </path>
+      </svg>
+      <svg class="-mt-60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#fff9e1" fill-opacity="1"
+          d="M0,64L30,69.3C60,75,120,85,180,122.7C240,160,300,224,360,218.7C420,213,480,139,540,106.7C600,75,660,85,720,117.3C780,149,840,203,900,234.7C960,267,1020,277,1080,245.3C1140,213,1200,139,1260,101.3C1320,64,1380,64,1410,64L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+        </path>
+      </svg> -->
+      <section class="p-2 mt-[600px] sm:p-8 lg:p-10 text-center bg-[#FFF9E1]">
+
+        <div class="flex flex-col items-center px-4">
+          <p class="text-base md:text-lg leading-8 text-[#121212] max-w-3xl">Shoutouts</p>
+          <h2
+            class="font-bold text-2xl md:text-3xl lg:text-4xl text-[#121212] max-w-xl mt-2 leading-tight sm:leading-snug lg:leading-normal">
+            Celebrating You, the heart of Every Baedy Moment</h2>
+          <p class="text-base md:text-lg text-[#4F4F4F] max-w-3xl mt-4">At Baedy, every celebration is about people, and
+            we
+            love shining a spotlight on the incredible individuals and milestones that make each event truly special.
+          </p>
+        </div>
+
+        <div class="max-w-full px-4 pt-6">
+          <!-- CAROUSEL LAYOUTS FOR MOBILE  -->
+          <div class="block sm:hidden px-4 my-8">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
+                  <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                    <img src="assets/shoutout-img-1.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                    <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
+                        Joe</span></p>
+                  </div>
+                  <div class="text-left p-4">
+                    <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                    <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                      love,
+                      laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+                  </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
+                  <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                    <img src="assets/shoutout-img-2.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                    <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
+                        Joe</span></p>
+                  </div>
+                  <div class="text-left p-4">
+                    <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                    <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                      love,
+                      laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+                  </div>
+                </div>
+                <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
+                  <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                    <img src="assets/shoutout-img-3.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                    <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
+                        Joe</span></p>
+                  </div>
+                  <div class="text-left p-4">
+                    <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                    <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                      love,
+                      laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+                  </div>
+                </div>
+                <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
+                  <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                    <img src="assets/shoutout-img-4.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                    <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
+                        Joe</span></p>
+                  </div>
+                  <div class="text-left p-4">
+                    <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                    <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                      love,
+                      laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+                  </div>
+                </div>
+                <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
+                  <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                    <img src="assets/shoutout-img-4.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                    <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
+                        Joe</span></p>
+                  </div>
+                  <div class="text-left p-4">
+                    <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                    <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                      love,
+                      laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+                  </div>
+                </div>
+                <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
+                  <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                    <img src="assets/shoutout-img-3.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                    <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
+                        Joe</span></p>
+                  </div>
+                  <div class="text-left p-4">
+                    <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                    <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                      love,
+                      laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+                  </div>
+                </div>
+                <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
+                  <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                    <img src="assets/shoutout-img-2.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                    <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
+                        Joe</span></p>
+                  </div>
+                  <div class="text-left p-4">
+                    <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                    <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                      love,
+                      laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+                  </div>
+                </div>
+                <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
+                  <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                    <img src="assets/shoutout-img-1.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                    <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
+                        Joe</span></p>
+                  </div>
+                  <div class="text-left p-4">
+                    <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                    <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                      love,
+                      laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+              <!-- Pagination dots -->
+              <!-- <div class="swiper-pagination mt-10"></div> -->
+              <div class="swiper-pagination mt-6"></div>
+
+              <!-- Swiper Navigation Arrows -->
+              <!-- <div class="swiper-button-prev text-xs !text-[#FC9A04] !left-0"></div>
+    <div class="swiper-button-next !text-[#FC9A04] !right-0"></div> -->
+            </div>
+          </div>
+
+          <!-- Grid Layout (Visible from sm and above) -->
+          <div class="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 px-4">
+            <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
+              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                <img src="assets/shoutout-img-1.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
+                </p>
+              </div>
+              <div class="text-left p-4">
+                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                  love,
+                  laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+              </div>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
+              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                <img src="assets/shoutout-img-2.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
+                </p>
+              </div>
+              <div class="text-left p-4">
+                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                  love,
+                  laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+              </div>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
+              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                <img src="assets/shoutout-img-3.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
+                </p>
+              </div>
+              <div class="text-left p-4">
+                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                  love,
+                  laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+              </div>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
+              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                <img src="assets/shoutout-img-4.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
+                </p>
+              </div>
+              <div class="text-left p-4">
+                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                  love,
+                  laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+              </div>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
+              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                <img src="assets/shoutout-img-4.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
+                </p>
+              </div>
+              <div class="text-left p-4">
+                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                  love,
+                  laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+              </div>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
+              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                <img src="assets/shoutout-img-3.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
+                </p>
+              </div>
+              <div class="text-left p-4">
+                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                  love,
+                  laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+              </div>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
+              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                <img src="assets/shoutout-img-2.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
+                </p>
+              </div>
+              <div class="text-left p-4">
+                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                  love,
+                  laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+              </div>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
+              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                <img src="assets/shoutout-img-1.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
+                </p>
+              </div>
+              <div class="text-left p-4">
+                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                  love,
+                  laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+              </div>
+            </div>
+
+          </div>
+          <a href="#"
+            class="bg-[#FC9A04] text-[#FFFFFF] text-sm sm:text-base font-semibold rounded-full px-6 py-3 hover:text-white transition">Learn
+            More</a>
+        </div>
+      </section>
+      <!-- REWARDS SECTION  -->
+      <section id="rewards" class="py-6 p-2 sm:p-8 lg:p-10  text-center">
+        <div class="flex flex-col items-center px-4">
+          <p class="text-base md:text-lg leading-8 text-[#121212] max-w-3xl">Rewards</p>
+          <h2
+            class="font-bold text-2xl md:text-3xl lg:text-4xl text-[#121212] max-w-xl mt-2 leading-tight sm:leading-snug lg:leading-normal">
+            Exciting Rewards for Every Celebration</h2>
+          <p class="text-base md:text-lg text-[#4F4F4F] max-w-3xl mt-4">Experience the joy of celebrating life's
+            milestones
+            with our monthly rewards. From birthdays to anniversaries, we have something special for everyone.</p>
+        </div>
+        <div class="max-w-full px-4 pt-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-6 mb-8 sm:mb-[67px]">
+            <div
+              class="w-full max-w-[400px] mx-auto rounded-xl border border-[#E7E7E7] flex flex-col text-center min-h-[400px] sm:min-h-[450px]">
+              <img src="/assets/reward-img-1.jpg" alt="Birthday Show"
+                class="w-full h-[200px] sm:h-[249px] object-cover rounded-t-xl">
+              <div class="flex flex-col flex-grow justify-between p-6">
+                <h2 class="font-semibold text-xl sm:text-2xl text-[#121212] mb-4">Join Our Birthday Month Reality Show!
+                </h2>
+                <p class="text-base sm:text-lg">Participate in fun game shows and win prizes!</p>
+              </div>
+            </div>
+            <div
+              class="w-full max-w-[400px] mx-auto rounded-xl border border-[#E7E7E7] flex flex-col text-center min-h-[400px] sm:min-h-[450px]">
+              <img src="/assets/reward-img-2.jpg" alt="Tiered Rewards"
+                class="w-full h-[200px] sm:h-[249px] object-cover rounded-t-xl">
+              <div class="flex flex-col flex-grow justify-between p-6">
+                <h2 class="font-semibold text-xl sm:text-2xl text-[#121212] mb-4">Tiered Rewards for Long-Term
+                  Subscribers
+                </h2>
+                <p class="text-base sm:text-lg">The longer you stay, the more you earn!</p>
+              </div>
+            </div>
+            <div
+              class="w-full max-w-[400px] mx-auto rounded-xl border border-[#E7E7E7] flex flex-col text-center min-h-[400px] sm:min-h-[450px]">
+              <img src="/assets/reward-img-3.jpg" alt="Celebrate More"
+                class="w-full h-[200px] sm:h-[249px] object-cover rounded-t-xl">
+              <div class="flex flex-col flex-grow justify-between p-6">
+                <h2 class="font-semibold text-xl sm:text-2xl text-[#121212] mb-4">Celebrate More, Earn More!</h2>
+                <p class="text-base sm:text-lg">Unlock exclusive rewards with each celebration.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center gap-4 mt-6">
+          <a href="#"
+            class="bg-[#FC9A04] text-white text-sm sm:text-base font-semibold rounded-full px-6 py-3 hover:bg-[#E58903] transition">Join
+            Us</a>
+          <a href="#"
+            class="bg-white text-[#DF7200] text-sm sm:text-base font-semibold rounded-full px-6 py-3 border-2 border-[#DF7200] hover:bg-[#DF7200] hover:text-white transition">Learn
+            More</a>
+        </div>
+      </section>
+
+      <!-- CELEBRATE SECTION  -->
+
+      <section id="celebrate" class="py-6 p-2 sm:p-8 lg:p-10 bg-[#FFFFFF]">
+        <div class="grid grid-cols-1 md:grid-cols-2 mb-0 sm:mb-[67px] max-w-full px-2 gap-0 sm:gap-5">
+          <div class="flex flex-col gap-4 sm:gap-6">
+            <p class="text-lg text-[#121212]">Celebrate</p>
+            <h2 class="w-full max-w-[525px] h-[116px] font-bold text-2xl sm:text-3xl lg:text-[40px] text-[#121212]">How
+              Our
+              Reward System Works</h2>
+          </div>
+          <div>
+            <p class="text-lg text-[#4F4F4F] pt-0 pb-6 sm:pb-0 sm:pt-16">Joining our program is easy and rewarding.
+              Simply
+              subscribe to our monthly plan, and you’re on your way to celebrating life’s milestones. Enjoy exclusive
+              rewards and the chance to participate in exciting game shows!</p>
           </div>
         </div>
 
-      </div>
-    </section>
-    <section class="w-full h-full bg-white py-[100px] ">
-      <div class="max-w-[819px] gap-6 mx-auto flex flex-col">
-        <h2 class="font-bold text-[40px] text-center text-black">Unlock Joy with Every Celebration You Make!</h2>
-        <p class="text-[18px] font-normal leading-8 text-[#121212] text-center">Experience the thrill of celebrating life’s milestones with exciting rewards. From birthdays to anniversaries, our service brings joy and unforgettable moments right to your doorstep.</p>
+        <div class="max-w-full px-2">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-6 mb-3 sm:mb-5">
+            <div
+              class="w-full max-w-[400px] mx-auto rounded-xl flex flex-col gap-2 sm:gap-4 min-h-[300px] sm:min-h-[400px]">
+              <img src="/assets/celebrate-img-1.jpg" alt=""
+                class="w-full h-[200px] sm:h-[200px] object-cover rounded-xl">
+              <div class="flex flex-col flex-grow gap-4 sm:gap-6">
+                <h2 class="font-semibold text-lg sm:text-xl lg:text-2xl text-[#121212]">Step 1: Subscribe to Our Monthly
+                  Plan</h2>
+                <p class="text-lg text-[#4F4F4F]">Start your journey by signing up today!</p>
+              </div>
+            </div>
+            <div
+              class="w-full max-w-[400px] mx-auto rounded-xl flex flex-col gap-2 sm:gap-4 min-h-[300px] sm:min-h-[400px]">
+              <img src="/assets/celebrate-img-2.jpg" alt=""
+                class="w-full h-[200px] sm:h-[200px] object-cover rounded-xl">
+              <div class="flex flex-col flex-grow gap-4 sm:gap-6">
+                <h2 class="font-semibold text-lg sm:text-xl lg:text-2xl text-[#121212]">Step 2: Submit Proof of
+                  Celebration
+                </h2>
+                <p class="text-lg text-[#4F4F4F]">Share your special moments with us.</p>
+              </div>
+            </div>
+            <div
+              class="w-full max-w-[400px] mx-auto rounded-xl flex flex-col gap-2 sm:gap-4 min-h-[300px] sm:min-h-[400px]">
+              <img src="/assets/celebrate-img-3.jpg" alt=""
+                class="w-full h-[200px] sm:h-[200px] object-cover rounded-xl">
+              <div class="flex flex-col flex-grow gap-4 sm:gap-6">
+                <h2 class="font-semibold text-lg sm:text-xl lg:text-2xl text-[#121212]">Step 3: Claim Rewards or Join
+                  Game
+                  Show</h2>
+                <p class="text-lg text-[#4F4F4F]">Enjoy rewards or join the fun!</p>
+              </div>
+            </div>
+          </div>
+          <a href="#"
+            class="bg-[#FC9A04] text-white text-sm sm:text-base font-semibold rounded-full px-6 py-3 hover:bg-[#E58903] transition">Join
+            Us</a>
+        </div>
+      </section>
 
-      </div>
-    </section>
+      <!-- CONTACT US SECTION  -->
 
-  </main>
-  <script src="main.js"></script>
-</body>
+      <section class="py-6 p-2 sm:p-8 lg:p-10 bg-[#FFFFFF]">
+        <div
+          class="flex flex-col md:flex-row gap-4 sm:gap-8 lg:gap-16 bg-[#F6F6F6] p-4 sm:p-6 lg:p-8 rounded-xl max-w-7xl mx-auto relative z-20">
+          <div class="w-full max-w-[500px] h-[440px] sm:max-w-[653px] sm:h-[554px]">
+            <img src="/assets/contact-us-img.png" alt="Contact Us Illustration"
+              class="w-[500px] h-[400px] sm:w[653px] sm:h-[500px] object-cover rounded-xl">
+          </div>
+          <div class="w-full max-w-[600px]">
+            <h2 class="font-bold text-2xl sm:text-3xl lg:text-[40px] text-[#121212] pb-4">Contact Us</h2>
+            <p class="text-base sm:text-lg text-[#4F4F4F] pb-6">Let’s Bring Your Celebration to Life!</p>
+
+            <form action="" class="flex flex-col gap-2">
+              <div class="flex flex-col gap-1">
+                <label for="name" class="text-sm sm:text-base font-medium text-[#121212]">Name</label>
+                <input type="text" id="name" placeholder="Your name here"
+                  class="w-full p-3 text-base border border-[#E7E7E7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FC9A04]">
+              </div>
+              <div class="flex flex-col gap-2">
+                <label for="email" class="text-sm sm:text-base font-medium text-[#121212]">Email</label>
+                <input type="email" id="email" placeholder="email@gmail.com"
+                  class="w-full p-3 text-base border border-[#E7E7E7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FC9A04]">
+              </div>
+              <div class="flex flex-col gap-2">
+                <label for="message" class="text-sm sm:text-base font-medium text-[#121212]">Message</label>
+                <textarea id="message" placeholder="Your message here" rows="4"
+                  class="w-full p-3 text-base border border-[#E7E7E7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FC9A04]"></textarea>
+              </div>
+              <button type="submit"
+                class="bg-[#FC9A04] text-white text-sm sm:text-base font-semibold rounded-full px-6 py-3 mt-2 hover:bg-[#E58903] transition w-[160px]">Send
+                Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER SECTION  -->
+      <footer class="bg-[#121212] text-[#FFFFFF] h-auto -mt-25 sm:-mt-50">
+        <div class="flex flex-col md:flex-row justify-between px-4 sm:px-8 lg:px-16 pt-30 sm:pt-50">
+          <div class="w-[340px] sm:w-[400px] flex flex-col gap-8">
+            <img src="assets/Logo.png" alt="" class="w-[50px]">
+            <p>Subscribe to our newsletter for the latest updates on features and offerings.</p>
+
+            <form action="">
+              <div class="flex flex-col gap-2">
+                <label for="email" class="text-sm sm:text-base font-medium text-[#FFFFFF]">Email</label>
+                <input type="email" id="email" placeholder="email@gmail.com"
+                  class="w-full p-3 text-base border border-[#E7E7E7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FC9A04]">
+              </div>
+              <button type="submit"
+                class="bg-[#FC9A04] text-white text-sm sm:text-base font-semibold rounded-full px-6 py-3 mt-6 hover:bg-[#E58903] transition">Join
+                Us
+              </button>
+            </form>
+          </div>
+
+          <div class="w-[300px]">
+            <div class="flex justify-between pt-10">
+              <ul class="leading-10">
+                <li class="text-[#FC9A04] text-lg font-medium">Quick Links</li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Shoutouts</a></li>
+                <li><a href="">Contact Us</a></li>
+              </ul>
+              <ul class="leading-10">
+                <li class="text-[#FC9A04] text-lg font-medium">Stay Connected</li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Linkedln</a></li>
+                <li><a href="">x</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+        <div
+          class="flex flex-col sm:flex-row justify-between items-center border-t border-[#7B310C] px-4 py-8 sm:px-8 lg:px-16 mt-14 gap-4 sm:gap-0">
+          <div class="flex gap-4 sm:gap-6">
+            <p>Privacy Policy</p>
+            <p>Terms of Use</p>
+          </div>
+          <div class="text-center sm:text-right">
+            2025 Baedy. All rights reserved.
+          </div>
+        </div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="main.js"></script>
+    </body>
 
 </html>
