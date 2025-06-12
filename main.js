@@ -3,6 +3,8 @@ let isMenuOpen = false;
 const contactForm = document.querySelector('[name=contactForm]')
 const slideToLeft = document.querySelector('.slideToLeft');
 const slideToRight = document.querySelector('.slideToRight');
+const shoutoutSwipe = document.querySelector('.shoutoutSwipe');
+const shoutouts = document.querySelector('.shoutouts');
 
 
 const serialize = (form) => {
@@ -134,8 +136,6 @@ const birthdatShouts = async () => {
       return response.json();
     })
     .then(data => {
-      console.log('Success:', data.data);
-
       let innerhtml = '';
 
       // <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
@@ -187,10 +187,49 @@ const shouts = async () => {
       return response.json();
     })
     .then(data => {
-      console.log(data);
-      
+
+      let innerHtmlSwiper = '';
+      let innerHtml = '';
+
+
+
+      data.data.data.forEach(el => {
+        innerHtmlSwiper += `
+            <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
+              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                <img src="${el.user.avatar}" alt="" class="rounded-xl w-full h-40 object-cover">
+                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">${el.user.fname} ${el.user.lname}</span></p>
+              </div>
+              <div class="text-left p-4">
+                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                <p class="text-[#3D3D3D] text-sm">${el.message}</p>
+              </div>
+            </div>
+        `
+      });
+
+
+
+      data.data.data.forEach(el => {
+        innerHtml += `
+          <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
+            <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+              <img src="${el.user.avatar}" alt="" class="rounded-xl w-full h-40 object-cover">
+              <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">${el.user.fname} ${el.user.lname}</span></p>
+            </div>
+            <div class="text-left p-4">
+              <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+              <p class="text-[#3D3D3D] text-sm">${el.message}</p>
+            </div>
+          </div>
+        `
+      });
+
+      shoutoutSwipe.innerHTML = innerHtmlSwiper
+      shoutouts.innerHTML = innerHtml
+
     })
-  }
+}
 
 
 // /frontend/fetch_frontend_shoutouts
