@@ -1226,20 +1226,20 @@
           <h2 class="font-bold text-2xl sm:text-3xl lg:text-[40px] text-[#121212] pb-4">Contact Us</h2>
           <p class="text-base sm:text-lg text-[#4F4F4F] pb-6">Let’s Bring Your Celebration to Life!</p>
 
-            <form action="" class="flex flex-col gap-2">
+            <form name="contactForm" class="flex flex-col gap-2">
               <div class="flex flex-col gap-1">
                 <label for="name" class="text-sm sm:text-base font-medium text-[#121212]">Name</label>
-                <input type="text" id="name" placeholder="Your name here"
+                <input name="name" required type="text" id="name" placeholder="Your name here"
                   class="w-full p-3 text-base border border-[#E7E7E7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FC9A04]">
               </div>
               <div class="flex flex-col gap-2">
                 <label for="email" class="text-sm sm:text-base font-medium text-[#121212]">Email</label>
-                <input type="email" id="email" placeholder="email@gmail.com"
+                <input name="email" required type="email" id="email" placeholder="email@gmail.com"
                   class="w-full p-3 text-base border border-[#E7E7E7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FC9A04]">
               </div>
               <div class="flex flex-col gap-2">
                 <label for="message" class="text-sm sm:text-base font-medium text-[#121212]">Message</label>
-                <textarea id="message" placeholder="Your message here" rows="4"
+                <textarea name="message" required id="message" placeholder="Your message here" rows="4"
                   class="w-full p-3 text-base border border-[#E7E7E7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FC9A04]"></textarea>
               </div>
               <button type="submit"
@@ -1303,6 +1303,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="main.js"></script>
 </body>
