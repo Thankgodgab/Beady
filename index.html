@@ -6,7 +6,9 @@
   <link rel="icon" type="image/svg+xml" href="/assets/Logo.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <title>Baedy</title>
@@ -99,748 +101,754 @@
 
   <main>
 
-  <!-- HERO SECTION -->
-  <section id="home" class="hero-section w-full h-screen relative overflow-hidden">
-    <div class="w-full h-full bg-cover bg-center relative" style="background-image: url('./assets/hero-bg.png');">
-      <div class="bg-black opacity-70 absolute inset-0 z-0"></div>
-      <div
-        class="hero-content relative z-10 text-center flex flex-col items-center text-white max-w-[819px] lg:top-[150px] top-[180px] mx-auto gap-6">
-        <h1 class="hero-text font-bold text-[32px] md:text-[56px] text-center text-white">Celebrate Life’s Moments
-          <br> with Exciting Rewards!
-        </h1>
-        <p class="font-normal text-[14px] mb-2 text-[#D1D1D1]">Join us to unlock monthly rewards for your special
-          occasions. Experience the thrill of our game <br>shows and celebrate with friends and family!</p>
-        <div class="flex gap-6">
-          <a href="/register" class="btn-primary">Subscribe </a>
-          <a href="/register" class="btn-secondary">Learn More </a>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section w-full h-screen relative overflow-hidden">
+      <div class="w-full h-full bg-cover bg-center relative" style="background-image: url('./assets/hero-bg.png');">
+        <div class="bg-black opacity-70 absolute inset-0 z-0"></div>
+        <div
+          class="hero-content relative z-10 text-center flex flex-col items-center text-white max-w-[819px] lg:top-[150px] top-[180px] mx-auto gap-6">
+          <h1 class="hero-text font-bold text-[32px] md:text-[56px] text-center text-white">Celebrate Life’s Moments
+            <br> with Exciting Rewards!
+          </h1>
+          <p class="font-normal text-[14px] mb-2 text-[#D1D1D1]">Join us to unlock monthly rewards for your special
+            occasions. Experience the thrill of our game <br>shows and celebrate with friends and family!</p>
+          <div class="flex gap-6">
+            <a href="/register" class="btn-primary">Subscribe </a>
+            <a href="/register" class="btn-secondary">Learn More </a>
+          </div>
+        </div>
+        <!-- Top Wave Layer 1 (Foreground, blending with background) -->
+        <svg class="absolute bottom-0 w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+          <path fill="#FFFFFFE5" fill-opacity="0.9"
+            d="M0,100C48,150,144,200,288,200C432,200,576,150,720,120C864,90,1008,90,1152,120C1296,150,1392,180,1440,190V200H0Z">
+          </path>
+        </svg>
+        <!-- Top Wave Layer 2 (Gray Overlay) -->
+        <svg class="absolute bottom-0 w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
+          <path fill="#FFFFFF" fill-opacity=""
+            d="M0,150C96,200,288,250,432,230C576,210,720,180,864,180C1008,180,1152,210,1296,230C1392,240,1440,250,1440,250V300H0Z">
+          </path>
+        </svg>
+      </div>
+    </section>
+
+    <section class="w-full h-full bg-white relative">
+      <div class="max-w-[819px] gap-6 mx-auto flex flex-col pt-[100px]">
+        <h2 class="font-bold text-[28px] sm:text-[40px] text-center text-black">
+          Unlock Joy with Every Celebration You Make!
+        </h2>
+        <p class="text-[18px] font-normal leading-8 text-[#121212] text-center">
+          Experience the thrill of celebrating life’s milestones with exciting rewards.
+          From birthdays to anniversaries, our service brings joy and unforgettable moments right to your doorstep.
+        </p>
+      </div>
+    </section>
+
+    <style>
+      .hero-section svg {
+        z-index: 5;
+      }
+
+      .hero-section svg:nth-child(3) {
+        z-index: 4;
+      }
+    </style>
+    <div class="w-full flex flex-col gap-6">
+      <!-- Swiper -->
+      <div class="carousel-wrapper overflow-hidden w-full">
+        <div class="carousel carousel-left flex gap-6" id="carousel">
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant1.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant4.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant1.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant4.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant1.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant4.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- Top Wave Layer 1 (Foreground, blending with background) -->
-      <svg class="absolute bottom-0 w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
-        <path fill="#FFFFFFE5" fill-opacity="0.9" d="M0,100C48,150,144,200,288,200C432,200,576,150,720,120C864,90,1008,90,1152,120C1296,150,1392,180,1440,190V200H0Z"></path>
-      </svg>
-      <!-- Top Wave Layer 2 (Gray Overlay) -->
-      <svg class="absolute bottom-0 w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
-        <path fill="#FFFFFF" fill-opacity="" d="M0,150C96,200,288,250,432,230C576,210,720,180,864,180C1008,180,1152,210,1296,230C1392,240,1440,250,1440,250V300H0Z"></path>
-      </svg>
-    </div>
-  </section>
+      <div class="carousel-wrapper overflow-hidden w-full">
+        <div class="carousel carousel-right flex gap-6" id="carousel">
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant1.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
 
-  <section class="w-full h-full bg-white relative">
-    <div class="max-w-[819px] gap-6 mx-auto flex flex-col pt-[100px]">
-      <h2 class="font-bold text-[28px] sm:text-[40px] text-center text-black">
-        Unlock Joy with Every Celebration You Make!
-      </h2>
-      <p class="text-[18px] font-normal leading-8 text-[#121212] text-center">
-        Experience the thrill of celebrating life’s milestones with exciting rewards.
-        From birthdays to anniversaries, our service brings joy and unforgettable moments right to your doorstep.
-      </p>
-    </div>
-  </section>
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
 
-  <style>
-    .hero-section svg {
-      z-index: 5;
-    }
-    .hero-section svg:nth-child(3) {
-      z-index: 4;
-    }
-  </style>
-    <div class="w-full flex flex-col gap-6">
-        <!-- Swiper -->
-        <div class="carousel-wrapper overflow-hidden w-full">
-          <div class="carousel carousel-left flex gap-6" id="carousel">
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant1.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
               </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
               </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
               </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant4.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant1.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant4.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
+            </div>
+          </div>
 
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant1.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant4.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
               </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
               </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
               </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant4.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
               </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
               </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
               </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant1.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant4.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant1.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant4.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
+            <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
+              <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
+              <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
+                <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
+              </div>
+            </div>
+            <div class="w-full gap-2">
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
+              </div>
+              <div class="flex gap-[12px]">
+                <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
+                <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="carousel-wrapper overflow-hidden w-full">
-          <div class="carousel carousel-right flex gap-6" id="carousel">
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant1.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant4.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant1.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant4.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
+      </div>
 
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant1.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant4.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant5.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item w-[259px] h-[254px] rounded-[14px] p-[10px] bg-[#F6F6F6] flex-col flex gap-[18px] ">
-                <div class="relative w-[239px] h-[176px] rounded-[14px] bg-[#121212] overflow-hidden">
-                  <img src="./assets/celebrant3.jpg" alt="celebrant picture" class="w-[241px] h-[180px] object-cover">
-                  <div class="absolute bottom-0 right-0 py-1 px-[10px] bg-[#FC9A04]">
-                    <p class="text-[#FFFBEA] font-normal text-[14px] leading-4">Send Gift</p>
-                  </div>
-                </div>
-                <div class="w-full gap-2">
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Celebrant</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">Jane Copp</p>
-                  </div>
-                  <div class="flex gap-[12px]">
-                    <p class="text-[14px] text-[#6D6D6D] font-normal">Birthday Date</p>
-                    <p class="text-[14px] text-[#6D6D6D] font-semibold">28-04-2025</p>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-        
     </div>
 
     <!-- ABOUT US -->
-    <section id="about" class="px-8 md:px-[50px] lg:pl-[70px] lg:pr-0 w-full h-full py-[100px] flex items-center justify-center">
+    <section id="about"
+      class="px-8 md:px-[50px] lg:pl-[70px] lg:pr-0 w-full h-full py-[100px] flex items-center justify-center">
 
       <!-- DESKTOP VIEW -->
       <div class="flex flex-col lg:flex-row gap-6">
@@ -849,8 +857,10 @@
           <h2 class="text-[28px] md:text-[40px] font-bold text-[#121212] ">Crafting Unforgettable Moments, One Event at
             a Time</h2>
           <img src="./assets/aboutUs-img.png" alt="about-us image"
-          class="h-[350px] w-[340px] rounded-tl-[14px] rounded-[14px] bg-[#D9D9D9] shadow-[0_20px_4px_0_#FC9A04] lg:hidden">
-          <p class="font-normal text-[18px] leading-8 text-[#4F4F4F] mt-4">At Baedy, we transform ideas into unforgettable experiences. From corporate gatherings and luxury weddings to community festivals and private parties, we bring creativity, precision, and passion to every event we touch.</p>
+            class="h-[350px] w-[340px] rounded-tl-[14px] rounded-[14px] bg-[#D9D9D9] shadow-[0_20px_4px_0_#FC9A04] lg:hidden">
+          <p class="font-normal text-[18px] leading-8 text-[#4F4F4F] mt-4">At Baedy, we transform ideas into
+            unforgettable experiences. From corporate gatherings and luxury weddings to community festivals and private
+            parties, we bring creativity, precision, and passion to every event we touch.</p>
           <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div class="p-6 rounded-lg bg-[#F6F6F6]">
               <h2 class="font-bold text-[36px] text-[#121212]">10+</h2>
@@ -878,423 +888,411 @@
 
 
     </section>
+      <!-- Shoutout Section -->
+      <section id="shoutOut" class="relative z-30 text-center px-4 md:px-[50px] lg:px-[100px] pt-[60px] pb-[100px]">
+        <div class="flex flex-col items-center px-4">
+          <p class="text-base md:text-lg leading-8 text-[#121212] max-w-3xl">Shoutouts</p>
+          <h2
+            class="font-bold text-2xl md:text-3xl lg:text-4xl text-[#121212] max-w-xl mt-2 leading-tight sm:leading-snug lg:leading-normal">
+            Celebrating You, the Heart of Every Baedy Moment!
+          </h2>
+          <p class="text-base md:text-lg text-[#4F4F4F] max-w-3xl mt-4">
+            At Baedy, every celebration is about people, and we love shining a spotlight on the incredible individuals
+            and milestones that make each event truly special.
+          </p>
+        </div>
 
 
-
-  <!-- Wave Section -->
-<div class="relative w-full overflow-hidden bg-[#fff9e1]">
-  <!-- Background Wave -->
-<div class="relative z-100 -mt-50">
-    <svg class="w-full h-[50px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
-      <path fill="#fff9e1" fill-opacity="1"
-        d="M0,150C96,200,288,250,432,230C576,210,720,180,864,180C1008,180,1152,210,1296,230C1392,240,1440,250,1440,250V300H0Z">
-      </path>
-    </svg>
-  </div>
-
-  <!-- Shoutout Section -->
-  <section id="shoutOut" class="relative z-30 text-center px-4 md:px-[50px] lg:px-[100px] pt-[60px] pb-[100px]">
-    <div class="flex flex-col items-center px-4">
-      <p class="text-base md:text-lg leading-8 text-[#121212] max-w-3xl">Shoutouts</p>
-      <h2
-        class="font-bold text-2xl md:text-3xl lg:text-4xl text-[#121212] max-w-xl mt-2 leading-tight sm:leading-snug lg:leading-normal">
-        Celebrating You, the Heart of Every Baedy Moment!
-      </h2>
-      <p class="text-base md:text-lg text-[#4F4F4F] max-w-3xl mt-4">
-        At Baedy, every celebration is about people, and we love shining a spotlight on the incredible individuals and milestones that make each event truly special.
-      </p>
-    </div>
-  </section>
-</div>
-
-
-      <div class="max-w-full px-4 pt-6">
-        <!-- CAROUSEL LAYOUTS FOR MOBILE  -->
-        <div class="block sm:hidden px-4 my-8">
-          <div class="swiper">
-            <div class="swiper-wrapper gap-6">
-              <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
-                <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-                  <img src="assets/shoutout-img-1.jpg" alt="" class="rounded-xl w-full !h-40 object-cover">
-                  <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
-                      Joe</span></p>
+        <div class="max-w-full px-4 pt-6">
+          <!-- CAROUSEL LAYOUTS FOR MOBILE  -->
+          <div class="block sm:hidden px-4 my-8">
+            <div class="swiper">
+              <div class="swiper-wrapper gap-6">
+                <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
+                  <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                    <img src="assets/shoutout-img-1.jpg" alt="" class="rounded-xl w-full !h-40 object-cover">
+                    <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
+                        Joe</span></p>
+                  </div>
+                  <div class="text-left p-4">
+                    <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                    <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                      love,
+                      laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+                  </div>
                 </div>
-                <div class="text-left p-4">
-                  <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-                  <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
-                    love,
-                    laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+
+                <!-- CARD 2 -->
+                <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
+                  <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                    <img src="assets/shoutout-img-2.jpg" alt="" class="rounded-xl w-full !h-40 object-cover">
+                    <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
+                        Joe</span></p>
+                  </div>
+                  <div class="text-left p-4">
+                    <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                    <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                      love,
+                      laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+                  </div>
                 </div>
+                <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
+                  <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                    <img src="assets/shoutout-img-3.jpg" alt="" class="rounded-xl w-full !h-40 object-cover">
+                    <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
+                        Joe</span></p>
+                  </div>
+                  <div class="text-left p-4">
+                    <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                    <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                      love,
+                      laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+                  </div>
+                </div>
+                <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
+                  <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                    <img src="assets/shoutout-img-4.jpg" alt="" class="rounded-xl w-full !h-40 object-cover">
+                    <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
+                        Joe</span></p>
+                  </div>
+                  <div class="text-left p-4">
+                    <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                    <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                      love,
+                      laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+                  </div>
+                </div>
+                <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
+                  <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                    <img src="assets/shoutout-img-4.jpg" alt="" class="rounded-xl w-full !h-40 object-cover">
+                    <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
+                        Joe</span></p>
+                  </div>
+                  <div class="text-left p-4">
+                    <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                    <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                      love,
+                      laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+                  </div>
+                </div>
+                <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
+                  <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                    <img src="assets/shoutout-img-3.jpg" alt="" class="rounded-xl w-full !h-40 object-cover">
+                    <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
+                        Joe</span></p>
+                  </div>
+                  <div class="text-left p-4">
+                    <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                    <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                      love,
+                      laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+                  </div>
+                </div>
+                <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
+                  <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                    <img src="assets/shoutout-img-2.jpg" alt="" class="rounded-xl w-full !h-40 object-cover">
+                    <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
+                        Joe</span></p>
+                  </div>
+                  <div class="text-left p-4">
+                    <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                    <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                      love,
+                      laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+                  </div>
+                </div>
+                <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
+                  <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                    <img src="assets/shoutout-img-1.jpg" alt="" class="rounded-xl w-full !h-40 object-cover">
+                    <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
+                        Joe</span></p>
+                  </div>
+                  <div class="text-left p-4">
+                    <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                    <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                      love,
+                      laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+                  </div>
+                </div>
+
+
+
+
               </div>
+              <!-- Pagination dots -->
+              <!-- <div class="swiper-pagination mt-10"></div> -->
+              <div class="swiper-pagination mt-6"></div>
 
-              <!-- CARD 2 -->
-              <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
-                <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-                  <img src="assets/shoutout-img-2.jpg" alt="" class="rounded-xl w-full !h-40 object-cover">
-                  <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
-                      Joe</span></p>
-                </div>
-                <div class="text-left p-4">
-                  <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-                  <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
-                    love,
-                    laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
-                </div>
-              </div>
-              <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
-                <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-                  <img src="assets/shoutout-img-3.jpg" alt="" class="rounded-xl w-full !h-40 object-cover">
-                  <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
-                      Joe</span></p>
-                </div>
-                <div class="text-left p-4">
-                  <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-                  <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
-                    love,
-                    laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
-                </div>
-              </div>
-              <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
-                <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-                  <img src="assets/shoutout-img-4.jpg" alt="" class="rounded-xl w-full !h-40 object-cover">
-                  <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
-                      Joe</span></p>
-                </div>
-                <div class="text-left p-4">
-                  <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-                  <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
-                    love,
-                    laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
-                </div>
-              </div>
-              <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
-                <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-                  <img src="assets/shoutout-img-4.jpg" alt="" class="rounded-xl w-full !h-40 object-cover">
-                  <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
-                      Joe</span></p>
-                </div>
-                <div class="text-left p-4">
-                  <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-                  <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
-                    love,
-                    laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
-                </div>
-              </div>
-              <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
-                <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-                  <img src="assets/shoutout-img-3.jpg" alt="" class="rounded-xl w-full !h-40 object-cover">
-                  <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
-                      Joe</span></p>
-                </div>
-                <div class="text-left p-4">
-                  <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-                  <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
-                    love,
-                    laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
-                </div>
-              </div>
-              <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
-                <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-                  <img src="assets/shoutout-img-2.jpg" alt="" class="rounded-xl w-full !h-40 object-cover">
-                  <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
-                      Joe</span></p>
-                </div>
-                <div class="text-left p-4">
-                  <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-                  <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
-                    love,
-                    laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
-                </div>
-              </div>
-              <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
-                <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-                  <img src="assets/shoutout-img-1.jpg" alt="" class="rounded-xl w-full !h-40 object-cover">
-                  <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael
-                      Joe</span></p>
-                </div>
-                <div class="text-left p-4">
-                  <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-                  <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
-                    love,
-                    laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
-                </div>
-              </div>
-
-
-
-
-            </div>
-            <!-- Pagination dots -->
-            <!-- <div class="swiper-pagination mt-10"></div> -->
-            <div class="swiper-pagination mt-6"></div>
-
-            <!-- Swiper Navigation Arrows -->
-            <!-- <div class="swiper-button-prev text-xs !text-[#FC9A04] !left-0"></div>
+              <!-- Swiper Navigation Arrows -->
+              <!-- <div class="swiper-button-prev text-xs !text-[#FC9A04] !left-0"></div>
     <div class="swiper-button-next !text-[#FC9A04] !right-0"></div> -->
-          </div>
-        </div>
-
-        <!-- Grid Layout (Visible from sm and above) -->
-        <div class="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 px-4">
-          <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
-            <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-              <img src="assets/shoutout-img-1.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
-              <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
-              </p>
-            </div>
-            <div class="text-left p-4">
-              <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-              <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
-                love,
-                laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
-            </div>
-          </div>
-          <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
-            <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-              <img src="assets/shoutout-img-2.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
-              <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
-              </p>
-            </div>
-            <div class="text-left p-4">
-              <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-              <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
-                love,
-                laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
-            </div>
-          </div>
-          <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
-            <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-              <img src="assets/shoutout-img-3.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
-              <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
-              </p>
-            </div>
-            <div class="text-left p-4">
-              <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-              <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
-                love,
-                laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
-            </div>
-          </div>
-          <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
-            <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-              <img src="assets/shoutout-img-4.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
-              <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
-              </p>
-            </div>
-            <div class="text-left p-4">
-              <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-              <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
-                love,
-                laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
-            </div>
-          </div>
-          <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
-            <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-              <img src="assets/shoutout-img-4.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
-              <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
-              </p>
-            </div>
-            <div class="text-left p-4">
-              <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-              <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
-                love,
-                laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
-            </div>
-          </div>
-          <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
-            <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-              <img src="assets/shoutout-img-3.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
-              <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
-              </p>
-            </div>
-            <div class="text-left p-4">
-              <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-              <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
-                love,
-                laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
-            </div>
-          </div>
-          <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
-            <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-              <img src="assets/shoutout-img-2.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
-              <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
-              </p>
-            </div>
-            <div class="text-left p-4">
-              <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-              <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
-                love,
-                laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
-            </div>
-          </div>
-          <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
-            <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-              <img src="assets/shoutout-img-1.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
-              <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
-              </p>
-            </div>
-            <div class="text-left p-4">
-              <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-              <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
-                love,
-                laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
             </div>
           </div>
 
+          <!-- Grid Layout (Visible from sm and above) -->
+          <div class="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 px-4">
+            <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
+              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                <img src="assets/shoutout-img-1.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
+                </p>
+              </div>
+              <div class="text-left p-4">
+                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                  love,
+                  laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+              </div>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
+              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                <img src="assets/shoutout-img-2.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
+                </p>
+              </div>
+              <div class="text-left p-4">
+                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                  love,
+                  laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+              </div>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
+              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                <img src="assets/shoutout-img-3.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
+                </p>
+              </div>
+              <div class="text-left p-4">
+                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                  love,
+                  laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+              </div>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
+              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                <img src="assets/shoutout-img-4.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
+                </p>
+              </div>
+              <div class="text-left p-4">
+                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                  love,
+                  laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+              </div>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
+              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                <img src="assets/shoutout-img-4.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
+                </p>
+              </div>
+              <div class="text-left p-4">
+                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                  love,
+                  laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+              </div>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
+              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                <img src="assets/shoutout-img-3.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
+                </p>
+              </div>
+              <div class="text-left p-4">
+                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                  love,
+                  laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+              </div>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
+              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                <img src="assets/shoutout-img-2.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
+                </p>
+              </div>
+              <div class="text-left p-4">
+                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                  love,
+                  laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+              </div>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
+              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                <img src="assets/shoutout-img-1.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
+                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Michael Joe</span>
+                </p>
+              </div>
+              <div class="text-left p-4">
+                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                <p class="text-[#3D3D3D] text-sm">Happy Birthday to an absolute gem! 💎 May your day be filled with
+                  love,
+                  laughter, and everything that brings you joy. Here's to another year of greatness! 🥳🎂</p>
+              </div>
+            </div>
+
+          </div>
+          <a href="#"
+            class="bg-[#FC9A04] text-[#FFFFFF] text-sm sm:text-base font-semibold rounded-full px-6 py-3 hover:text-white transition">Learn
+            More</a>
         </div>
-        <a href="#"
-          class="bg-[#FC9A04] text-[#FFFFFF] text-sm sm:text-base font-semibold rounded-full px-6 py-3 hover:text-white transition">Learn
-          More</a>
-      </div>
-    </section>
-    <!-- REWARDS SECTION  -->
-    <section id="rewards" class="py-[100px] px-8 md:px-[50px] lg:px-[100px]  text-center">
-      <div class="flex flex-col items-center px-4">
-        <p class="text-base md:text-lg leading-8 text-[#121212] max-w-3xl">Rewards</p>
-        <h2
-          class="font-bold text-2xl md:text-3xl lg:text-4xl text-[#121212] max-w-xl mt-2 leading-tight sm:leading-snug lg:leading-normal">
-          Exciting Rewards for Every Celebration</h2>
-        <p class="text-base md:text-lg text-[#4F4F4F] max-w-3xl mt-4">Experience the joy of celebrating life's
-          milestones
-          with our monthly rewards. From birthdays to anniversaries, we have something special for everyone.</p>
-      </div>
-      <div class="max-w-full px-4 pt-6">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-6 mb-8 sm:mb-[67px]">
-          <div
-            class="w-full max-w-[400px] mx-auto rounded-xl border border-[#E7E7E7] flex flex-col text-center min-h-[400px] sm:min-h-[450px]">
-            <img src="/assets/reward-img-1.jpg" alt="Birthday Show"
-              class="w-full h-[200px] sm:h-[249px] object-cover rounded-t-xl">
-            <div class="flex flex-col flex-grow justify-between p-6">
-              <h2 class="font-semibold text-xl sm:text-2xl text-[#121212] mb-4">Join Our Birthday Month Reality Show!
-              </h2>
-              <p class="text-base sm:text-lg">Participate in fun game shows and win prizes!</p>
+      </section>
+      <!-- REWARDS SECTION  -->
+      <section id="rewards" class="py-[100px] px-8 md:px-[50px] lg:px-[100px]  text-center">
+        <div class="flex flex-col items-center px-4">
+          <p class="text-base md:text-lg leading-8 text-[#121212] max-w-3xl">Rewards</p>
+          <h2
+            class="font-bold text-2xl md:text-3xl lg:text-4xl text-[#121212] max-w-xl mt-2 leading-tight sm:leading-snug lg:leading-normal">
+            Exciting Rewards for Every Celebration</h2>
+          <p class="text-base md:text-lg text-[#4F4F4F] max-w-3xl mt-4">Experience the joy of celebrating life's
+            milestones
+            with our monthly rewards. From birthdays to anniversaries, we have something special for everyone.</p>
+        </div>
+        <div class="max-w-full px-4 pt-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-6 mb-8 sm:mb-[67px]">
+            <div
+              class="w-full max-w-[400px] mx-auto rounded-xl border border-[#E7E7E7] flex flex-col text-center min-h-[400px] sm:min-h-[450px]">
+              <img src="/assets/reward-img-1.jpg" alt="Birthday Show"
+                class="w-full h-[200px] sm:h-[249px] object-cover rounded-t-xl">
+              <div class="flex flex-col flex-grow justify-between p-6">
+                <h2 class="font-semibold text-xl sm:text-2xl text-[#121212] mb-4">Join Our Birthday Month Reality Show!
+                </h2>
+                <p class="text-base sm:text-lg">Participate in fun game shows and win prizes!</p>
+              </div>
+            </div>
+            <div
+              class="w-full max-w-[400px] mx-auto rounded-xl border border-[#E7E7E7] flex flex-col text-center min-h-[400px] sm:min-h-[450px]">
+              <img src="/assets/reward-img-2.jpg" alt="Tiered Rewards"
+                class="w-full h-[200px] sm:h-[249px] object-cover rounded-t-xl">
+              <div class="flex flex-col flex-grow justify-between p-6">
+                <h2 class="font-semibold text-xl sm:text-2xl text-[#121212] mb-4">Tiered Rewards for Long-Term
+                  Subscribers
+                </h2>
+                <p class="text-base sm:text-lg">The longer you stay, the more you earn!</p>
+              </div>
+            </div>
+            <div
+              class="w-full max-w-[400px] mx-auto rounded-xl border border-[#E7E7E7] flex flex-col text-center min-h-[400px] sm:min-h-[450px]">
+              <img src="/assets/reward-img-3.jpg" alt="Celebrate More"
+                class="w-full h-[200px] sm:h-[249px] object-cover rounded-t-xl">
+              <div class="flex flex-col flex-grow justify-between p-6">
+                <h2 class="font-semibold text-xl sm:text-2xl text-[#121212] mb-4">Celebrate More, Earn More!</h2>
+                <p class="text-base sm:text-lg">Unlock exclusive rewards with each celebration.</p>
+              </div>
             </div>
           </div>
-          <div
-            class="w-full max-w-[400px] mx-auto rounded-xl border border-[#E7E7E7] flex flex-col text-center min-h-[400px] sm:min-h-[450px]">
-            <img src="/assets/reward-img-2.jpg" alt="Tiered Rewards"
-              class="w-full h-[200px] sm:h-[249px] object-cover rounded-t-xl">
-            <div class="flex flex-col flex-grow justify-between p-6">
-              <h2 class="font-semibold text-xl sm:text-2xl text-[#121212] mb-4">Tiered Rewards for Long-Term
-                Subscribers
-              </h2>
-              <p class="text-base sm:text-lg">The longer you stay, the more you earn!</p>
-            </div>
-          </div>
-          <div
-            class="w-full max-w-[400px] mx-auto rounded-xl border border-[#E7E7E7] flex flex-col text-center min-h-[400px] sm:min-h-[450px]">
-            <img src="/assets/reward-img-3.jpg" alt="Celebrate More"
-              class="w-full h-[200px] sm:h-[249px] object-cover rounded-t-xl">
-            <div class="flex flex-col flex-grow justify-between p-6">
-              <h2 class="font-semibold text-xl sm:text-2xl text-[#121212] mb-4">Celebrate More, Earn More!</h2>
-              <p class="text-base sm:text-lg">Unlock exclusive rewards with each celebration.</p>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="flex justify-center gap-4 mt-6">
-        <a href="#"
-          class="bg-[#FC9A04] text-white text-sm sm:text-base font-semibold rounded-full px-6 py-3 hover:bg-[#E58903] transition">Join
-          Us</a>
-        <a href="#"
-          class="bg-white text-[#DF7200] text-sm sm:text-base font-semibold rounded-full px-6 py-3 border-2 border-[#DF7200] hover:bg-[#DF7200] hover:text-white transition">Learn
-          More</a>
-      </div>
-    </section>
-
-    <!-- CELEBRATE SECTION  -->
-
-    <section id="celebrate" class="pb-[100px] px-8 md:px-[50px] lg:px-[100px] bg-[#FFFFFF]">
-      <div class="grid grid-cols-1 md:grid-cols-2 mb-0 sm:mb-[67px] max-w-full px-2 gap-0 sm:gap-5">
-        <div class="flex flex-col gap-4 sm:gap-6">
-          <p class="text-lg text-[#121212]">Celebrate</p>
-          <h2 class="w-full max-w-[525px] h-[116px] font-bold text-2xl sm:text-3xl lg:text-[40px] text-[#121212]">How
-            Our
-            Reward System Works</h2>
+        <div class="flex justify-center gap-4 mt-6">
+          <a href="#"
+            class="bg-[#FC9A04] text-white text-sm sm:text-base font-semibold rounded-full px-6 py-3 hover:bg-[#E58903] transition">Join
+            Us</a>
+          <a href="#"
+            class="bg-white text-[#DF7200] text-sm sm:text-base font-semibold rounded-full px-6 py-3 border-2 border-[#DF7200] hover:bg-[#DF7200] hover:text-white transition">Learn
+            More</a>
         </div>
-        <div>
-          <p class="text-lg text-[#4F4F4F] pt-0 pb-6 sm:pb-0 sm:pt-16">Joining our program is easy and rewarding.
-            Simply
-            subscribe to our monthly plan, and you’re on your way to celebrating life’s milestones. Enjoy exclusive
-            rewards and the chance to participate in exciting game shows!</p>
-        </div>
-      </div>
+      </section>
 
-      <div class="max-w-full px-2">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-6 mb-3 sm:mb-5">
-          <div
-            class="w-full max-w-[400px] mx-auto rounded-xl flex flex-col gap-2 sm:gap-4 min-h-[300px] sm:min-h-[400px]">
-            <img src="/assets/celebrate-img-1.jpg" alt="" class="w-full h-[200px] sm:h-[200px] object-cover rounded-xl">
-            <div class="flex flex-col flex-grow gap-4 sm:gap-6">
-              <h2 class="font-semibold text-lg sm:text-xl lg:text-2xl text-[#121212]">Step 1: Subscribe to Our Monthly
-                Plan</h2>
-              <p class="text-lg text-[#4F4F4F]">Start your journey by signing up today!</p>
-            </div>
+      <!-- CELEBRATE SECTION  -->
+
+      <section id="celebrate" class="pb-[100px] px-8 md:px-[50px] lg:px-[100px] bg-[#FFFFFF]">
+        <div class="grid grid-cols-1 md:grid-cols-2 mb-0 sm:mb-[67px] max-w-full px-2 gap-0 sm:gap-5">
+          <div class="flex flex-col gap-4 sm:gap-6">
+            <p class="text-lg text-[#121212]">Celebrate</p>
+            <h2 class="w-full max-w-[525px] h-[116px] font-bold text-2xl sm:text-3xl lg:text-[40px] text-[#121212]">How
+              Our
+              Reward System Works</h2>
           </div>
-          <div
-            class="w-full max-w-[400px] mx-auto rounded-xl flex flex-col gap-2 sm:gap-4 min-h-[300px] sm:min-h-[400px]">
-            <img src="/assets/celebrate-img-2.jpg" alt="" class="w-full h-[200px] sm:h-[200px] object-cover rounded-xl">
-            <div class="flex flex-col flex-grow gap-4 sm:gap-6">
-              <h2 class="font-semibold text-lg sm:text-xl lg:text-2xl text-[#121212]">Step 2: Submit Proof of
-                Celebration
-              </h2>
-              <p class="text-lg text-[#4F4F4F]">Share your special moments with us.</p>
-            </div>
-          </div>
-          <div
-            class="w-full max-w-[400px] mx-auto rounded-xl flex flex-col gap-2 sm:gap-4 min-h-[300px] sm:min-h-[400px]">
-            <img src="/assets/celebrate-img-3.jpg" alt="" class="w-full h-[200px] sm:h-[200px] object-cover rounded-xl">
-            <div class="flex flex-col flex-grow gap-4 sm:gap-6">
-              <h2 class="font-semibold text-lg sm:text-xl lg:text-2xl text-[#121212]">Step 3: Claim Rewards or Join
-                Game
-                Show</h2>
-              <p class="text-lg text-[#4F4F4F]">Enjoy rewards or join the fun!</p>
-            </div>
+          <div>
+            <p class="text-lg text-[#4F4F4F] pt-0 pb-6 sm:pb-0 sm:pt-16">Joining our program is easy and rewarding.
+              Simply
+              subscribe to our monthly plan, and you’re on your way to celebrating life’s milestones. Enjoy exclusive
+              rewards and the chance to participate in exciting game shows!</p>
           </div>
         </div>
-        <a href="#"
-          class="bg-[#FC9A04] text-white text-sm sm:text-base font-semibold rounded-full px-6 py-3 hover:bg-[#E58903] transition">Join
-          Us</a>
-      </div>
-    </section>
 
-    <!-- CONTACT US SECTION  -->
-
-    <section id="contact" class="py-[100p] px-4 md:px-[50px] lg:px-[100px] bg-[#FFFFFF] z-50">
-      <div
-        class="flex flex-col md:flex-row gap-4 sm:gap-8 lg:gap-16 bg-[#F6F6F6] p-4 sm:p-6 lg:p-8 rounded-xl max-w-7xl mx-auto relative z-20">
-        <div class="w-full max-w-[500px] h-[440px] sm:max-w-[653px] sm:h-[554px]">
-          <img src="/assets/contact-us-img.png" alt="Contact Us Illustration"
-            class="w-[500px] h-[400px] sm:w[653px] sm:h-[500px] object-cover rounded-xl">
+        <div class="max-w-full px-2">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-6 mb-3 sm:mb-5">
+            <div
+              class="w-full max-w-[400px] mx-auto rounded-xl flex flex-col gap-2 sm:gap-4 min-h-[300px] sm:min-h-[400px]">
+              <img src="/assets/celebrate-img-1.jpg" alt=""
+                class="w-full h-[200px] sm:h-[200px] object-cover rounded-xl">
+              <div class="flex flex-col flex-grow gap-4 sm:gap-6">
+                <h2 class="font-semibold text-lg sm:text-xl lg:text-2xl text-[#121212]">Step 1: Subscribe to Our Monthly
+                  Plan</h2>
+                <p class="text-lg text-[#4F4F4F]">Start your journey by signing up today!</p>
+              </div>
+            </div>
+            <div
+              class="w-full max-w-[400px] mx-auto rounded-xl flex flex-col gap-2 sm:gap-4 min-h-[300px] sm:min-h-[400px]">
+              <img src="/assets/celebrate-img-2.jpg" alt=""
+                class="w-full h-[200px] sm:h-[200px] object-cover rounded-xl">
+              <div class="flex flex-col flex-grow gap-4 sm:gap-6">
+                <h2 class="font-semibold text-lg sm:text-xl lg:text-2xl text-[#121212]">Step 2: Submit Proof of
+                  Celebration
+                </h2>
+                <p class="text-lg text-[#4F4F4F]">Share your special moments with us.</p>
+              </div>
+            </div>
+            <div
+              class="w-full max-w-[400px] mx-auto rounded-xl flex flex-col gap-2 sm:gap-4 min-h-[300px] sm:min-h-[400px]">
+              <img src="/assets/celebrate-img-3.jpg" alt=""
+                class="w-full h-[200px] sm:h-[200px] object-cover rounded-xl">
+              <div class="flex flex-col flex-grow gap-4 sm:gap-6">
+                <h2 class="font-semibold text-lg sm:text-xl lg:text-2xl text-[#121212]">Step 3: Claim Rewards or Join
+                  Game
+                  Show</h2>
+                <p class="text-lg text-[#4F4F4F]">Enjoy rewards or join the fun!</p>
+              </div>
+            </div>
+          </div>
+          <a href="#"
+            class="bg-[#FC9A04] text-white text-sm sm:text-base font-semibold rounded-full px-6 py-3 hover:bg-[#E58903] transition">Join
+            Us</a>
         </div>
-        <div class="w-full max-w-[600px]">
-          <h2 class="font-bold text-2xl sm:text-3xl lg:text-[40px] text-[#121212] pb-4">Contact Us</h2>
-          <p class="text-base sm:text-lg text-[#4F4F4F] pb-6">Let’s Bring Your Celebration to Life!</p>
+      </section>
 
-          <form action="" class="flex flex-col gap-2">
-            <div class="flex flex-col gap-1">
-              <label for="name" class="text-sm sm:text-base font-medium text-[#121212]">Name</label>
-              <input type="text" id="name" placeholder="Your name here"
-                class="w-full p-3 text-base border border-[#E7E7E7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FC9A04]">
-            </div>
-            <div class="flex flex-col gap-2">
-              <label for="email" class="text-sm sm:text-base font-medium text-[#121212]">Email</label>
-              <input type="email" id="email" placeholder="email@gmail.com"
-                class="w-full p-3 text-base border border-[#E7E7E7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FC9A04]">
-            </div>
-            <div class="flex flex-col gap-2">
-              <label for="message" class="text-sm sm:text-base font-medium text-[#121212]">Message</label>
-              <textarea id="message" placeholder="Your message here" rows="4"
-                class="w-full p-3 text-base border border-[#E7E7E7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FC9A04]"></textarea>
-            </div>
-            <button type="submit"
-              class="bg-[#FC9A04] text-white text-sm sm:text-base font-semibold rounded-full px-6 py-3 mt-2 hover:bg-[#E58903] transition w-fit">Send
-              Message
-            </button>
-          </form>
+      <!-- CONTACT US SECTION  -->
+
+      <section id="contact" class="py-[100p] px-4 md:px-[50px] lg:px-[100px] bg-[#FFFFFF] z-50">
+        <div
+          class="flex flex-col md:flex-row gap-4 sm:gap-8 lg:gap-16 bg-[#F6F6F6] p-4 sm:p-6 lg:p-8 rounded-xl max-w-7xl mx-auto relative z-20">
+          <div class="w-full max-w-[500px] h-[440px] sm:max-w-[653px] sm:h-[554px]">
+            <img src="/assets/contact-us-img.png" alt="Contact Us Illustration"
+              class="w-[500px] h-[400px] sm:w[653px] sm:h-[500px] object-cover rounded-xl">
+          </div>
+          <div class="w-full max-w-[600px]">
+            <h2 class="font-bold text-2xl sm:text-3xl lg:text-[40px] text-[#121212] pb-4">Contact Us</h2>
+            <p class="text-base sm:text-lg text-[#4F4F4F] pb-6">Let’s Bring Your Celebration to Life!</p>
+
+            <form action="" class="flex flex-col gap-2">
+              <div class="flex flex-col gap-1">
+                <label for="name" class="text-sm sm:text-base font-medium text-[#121212]">Name</label>
+                <input type="text" id="name" placeholder="Your name here"
+                  class="w-full p-3 text-base border border-[#E7E7E7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FC9A04]">
+              </div>
+              <div class="flex flex-col gap-2">
+                <label for="email" class="text-sm sm:text-base font-medium text-[#121212]">Email</label>
+                <input type="email" id="email" placeholder="email@gmail.com"
+                  class="w-full p-3 text-base border border-[#E7E7E7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FC9A04]">
+              </div>
+              <div class="flex flex-col gap-2">
+                <label for="message" class="text-sm sm:text-base font-medium text-[#121212]">Message</label>
+                <textarea id="message" placeholder="Your message here" rows="4"
+                  class="w-full p-3 text-base border border-[#E7E7E7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FC9A04]"></textarea>
+              </div>
+              <button type="submit"
+                class="bg-[#FC9A04] text-white text-sm sm:text-base font-semibold rounded-full px-6 py-3 mt-2 hover:bg-[#E58903] transition w-fit">Send
+                Message
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
   </main>
 
   <!-- FOOTER SECTION  -->
@@ -1321,9 +1319,9 @@
         <div class="flex justify-between pt-10">
           <ul class="leading-10">
             <li class="text-[#FC9A04] text-lg font-medium">Quick Links</li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Shoutouts</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#shoutOut">Shoutouts</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
           <ul class="leading-10">
             <li class="text-[#FC9A04] text-lg font-medium">Stay Connected</li>
