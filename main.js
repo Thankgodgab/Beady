@@ -5,7 +5,7 @@ function toggleMobileMenu() {
 
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1.2,
-  spaceBetween: 16,
+  spaceBetween: 10,
   loop: true,
   autoplay: {
     delay: 3000,
