@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Baedy Shoutouts</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <body class="bg-white">
   <section id="shoutOut" class="relative z-30 text-center px-4 md:px-[50px] lg:px-[100px] pt-[60px] pb-[100px]">
     <div class="flex flex-col items-center px-4">
       <p class="text-base md:text-lg leading-8 text-[#121212] max-w-3xl">More Shoutouts</p>
-      <h2 class="font-bold text-2xl md:text-3xl lg:text-4xl text-[#121212] max-w-xl mt-2 leading-tight sm:leading-snug lg:leading-normal">
+      <h2
+        class="font-bold text-2xl md:text-3xl lg:text-4xl text-[#121212] max-w-xl mt-2 leading-tight sm:leading-snug lg:leading-normal">
         More Moments to Celebrate!
       </h2>
       <p class="text-base md:text-lg text-[#4F4F4F] max-w-3xl mt-4">
@@ -19,103 +22,29 @@
     </div>
 
     <div class="max-w-full px-4 pt-6">
-      <!-- Grid Layout (Visible from sm and above) -->
-      <div class="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 px-4">
-        <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
-          <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-            <img src="assets/shoutout-img-1.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
-            <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Sarah Lee</span></p>
-          </div>
-          <div class="text-left p-4">
-            <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-            <p class="text-[#3D3D3D] text-sm">Congratulations on your promotion, Sarah! 🎉 Your hard work and dedication shine bright. Here's to new heights! 🚀</p>
-          </div>
-        </div>
-        <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
-          <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-            <img src="assets/shoutout-img-2.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
-            <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Emma Brown</span></p>
-          </div>
-          <div class="text-left p-4">
-            <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-            <p class="text-[#3D3D3D] text-sm">Happy Anniversary, Emma! 🥂 Your love story inspires us all. Cheers to many more years of happiness! 💖</p>
-          </div>
-        </div>
-        <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
-          <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-            <img src="assets/shoutout-img-3.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
-            <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">James Carter</span></p>
-          </div>
-          <div class="text-left p-4">
-            <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-            <p class="text-[#3D3D3D] text-sm">Big cheers to James for crushing it at the marathon! 🏃‍♂️ Your determination is unstoppable! 🏅</p>
-          </div>
-        </div>
-        <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
-          <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-            <img src="assets/shoutout-img-4.jpg" alt="" class="rounded-xl w-full h-40 object-cover">
-            <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Lily Adams</span></p>
-          </div>
-          <div class="text-left p-4">
-            <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-            <p class="text-[#3D3D3D] text-sm">Happy Graduation, Lily! 🎓 Your brilliance lights the way. Here's to a future full of success! 🌟</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- CAROUSEL LAYOUT FOR MOBILE -->
       <div class="block sm:hidden px-4 my-8">
         <div class="swiper">
-          <div class="swiper-wrapper gap-6">
-            <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
-              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-                <img src="assets/shoutout-img-4.jpg" alt="" class="rounded-xl w-full !h-40 object-cover">
-                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Sarah Lee</span></p>
-              </div>
-              <div class="text-left p-4">
-                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-                <p class="text-[#3D3D3D] text-sm">Congratulations on your promotion, Sarah! 🎉 Your hard work and dedication shine bright. Here's to new heights! 🚀</p>
-              </div>
-            </div>
-            <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
-              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-                <img src="assets/shoutout-img-3.jpg" alt="" class="rounded-xl w-full !h-40 object-cover">
-                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Emma Brown</span></p>
-              </div>
-              <div class="text-left p-4">
-                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-                <p class="text-[#3D3D3D] text-sm">Happy Anniversary, Emma! 🥂 Your love story inspires us all. Cheers to many more years of happiness! 💖</p>
-              </div>
-            </div>
-            <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
-              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-                <img src="assets/shoutout-img-2.jpg" alt="" class="rounded-xl w-full !h-40 object-cover">
-                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">James Carter</span></p>
-              </div>
-              <div class="text-left p-4">
-                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-                <p class="text-[#3D3D3D] text-sm">Big cheers to James for crushing it at the marathon! 🏃‍♂️ Your determination is unstoppable! 🏅</p>
-              </div>
-            </div>
-            <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
-              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-                <img src="assets/shoutout-img-1.jpg" alt="" class="rounded-xl w-full !h-40 object-cover">
-                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">Lily Adams</span></p>
-              </div>
-              <div class="text-left p-4">
-                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-                <p class="text-[#3D3D3D] text-sm">Happy Graduation, Lily! 🎓 Your brilliance lights the way. Here's to a future full of success! 🌟</p>
-              </div>
-            </div>
+          <div class="swiper-wrapper shoutoutSwipe">
+            <div class=""></div>
           </div>
           <div class="swiper-pagination mt-6"></div>
+          <!-- <div class="swiper-button-prev !text-[#FC9A04] !left-0"></div>
+            <div class="swiper-button-next !text-[#FC9A04] !right-0"></div> -->
         </div>
       </div>
+    </div>
+
+    <!-- Grid Layout (Visible from sm and above) -->
+    <div class="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 px-4 shoutouts"></div>
+    </div>
     </div>
   </section>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
+
+    const shoutoutSwipe = document.querySelector('.shoutoutSwipe');
+    const shoutouts = document.querySelector('.shoutouts');
     var swiper = new Swiper('.swiper', {
       slidesPerView: 'auto',
       spaceBetween: 24,
@@ -124,6 +53,71 @@
         clickable: true,
       },
     });
+
+
+
+
+
+    const shouts = async () => {
+      fetch('https://bd.literesults.net/api/frontend/fetch_frontend_shoutouts', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        }
+      })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then(data => {
+
+          let innerHtmlSwiper = '';
+          let innerHtml = '';
+
+
+
+          data.data.data.forEach(el => {
+            innerHtmlSwiper += `
+            <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
+              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+                <img src="${el.user.avatar}" alt="" class="rounded-xl w-full h-40 object-cover">
+                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">${el.user.fname} ${el.user.lname}</span></p>
+              </div>
+              <div class="text-left p-4">
+                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+                <p class="text-[#3D3D3D] text-sm">${el.message}</p>
+              </div>
+            </div>
+        `
+          });
+
+
+
+          data.data.data.forEach(el => {
+            innerHtml += `
+          <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
+            <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+              <img src="${el.user.avatar}" alt="" class="rounded-xl w-full h-40 object-cover">
+              <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">${el.user.fname} ${el.user.lname}</span></p>
+            </div>
+            <div class="text-left p-4">
+              <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+              <p class="text-[#3D3D3D] text-sm">${el.message}</p>
+            </div>
+          </div>
+        `
+          });
+
+          shoutoutSwipe.innerHTML = innerHtmlSwiper
+          shoutouts.innerHTML = innerHtml
+
+        })
+    }
+
+    shouts()
   </script>
 </body>
+
 </html>
