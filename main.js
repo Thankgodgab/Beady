@@ -174,7 +174,7 @@ const birthdatShouts = async () => {
 
 
 const shouts = async () => {
-  fetch('https://bd.literesults.net/api/frontend/fetch_frontend_shoutouts', {
+  fetch('https://api.bigdaymi.com/api/frontend/fetch_frontend_shoutouts', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
