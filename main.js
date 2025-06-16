@@ -51,7 +51,7 @@ const serialize = (form) => {
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const payload = serialize(e.target);
-  fetch('https://bd.literesults.net/api/frontend/save_contact', {
+  fetch('https://api.bigdaymi.com/api/frontend/save_contact', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -123,7 +123,7 @@ const prefix = (data) => {
 
 
 const birthdatShouts = async () => {
-  fetch('https://bd.literesults.net/api/frontend/fetch_frontend_birthday_users', {
+  fetch('https://api.bigdaymi.com/api/frontend/fetch_frontend_birthday_users', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -174,7 +174,7 @@ const birthdatShouts = async () => {
 
 
 const shouts = async () => {
-  fetch('https://bd.literesults.net/api/frontend/fetch_frontend_shoutouts', {
+  fetch('https://api.bigdaymi.com/api/frontend/fetch_frontend_shoutouts', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
