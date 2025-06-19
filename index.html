@@ -202,39 +202,40 @@
 
     <!-- SHOUTOUTS SECTION  -->
     <section id="shoutOut" class="px-4 md:px-[50px] lg:px-[100px] py-[100px] text-center bg-[#FFF9E1]">
+  <div class="flex flex-col items-center px-4">
+    <p class="text-base md:text-lg leading-8 text-[#121212] max-w-3xl">Shoutouts</p>
+    <h2 class="font-bold text-2xl md:text-3xl lg:text-4xl text-[#121212] max-w-xl mt-2 leading-tight sm:leading-snug lg:leading-normal">
+      Celebrating You, the heart of Every Baedy Moment
+    </h2>
+    <p class="text-base md:text-lg text-[#4F4F4F] max-w-3xl mt-4">
+      At Baedy, every celebration is about people, and we love shining a spotlight on the incredible individuals and milestones that make each event truly special.
+    </p>
+  </div>
 
-      <div class="flex flex-col items-center px-4">
-        <p class="text-base md:text-lg leading-8 text-[#121212] max-w-3xl">Shoutouts</p>
-        <h2
-          class="font-bold text-2xl md:text-3xl lg:text-4xl text-[#121212] max-w-xl mt-2 leading-tight sm:leading-snug lg:leading-normal">
-          Celebrating You, the heart of Every Baedy Moment</h2>
-        <p class="text-base md:text-lg text-[#4F4F4F] max-w-3xl mt-4">At Baedy, every celebration is about people, and
-          we
-          love shining a spotlight on the incredible individuals and milestones that make each event truly special.
-        </p>
+  <div class="max-w-full px-4 pt-6">
+    <!-- CAROUSEL LAYOUTS FOR MOBILE -->
+    <div class="block sm:hidden px-4 my-8">
+      <div class="swiper">
+        <div class="swiper-wrapper shoutoutSwipe"></div>
+        <div class="swiper-pagination mt-6"></div>
       </div>
+    </div>
 
-      <div class="max-w-full px-4 pt-6">
-        <!-- CAROUSEL LAYOUTS FOR MOBILE  -->
-        <div class="block sm:hidden px-4 my-8">
-          <div class="swiper">
-            <div class="swiper-wrapper shoutoutSwipe">
-              <div class=""></div>
-            </div>
-            <div class="swiper-pagination mt-6"></div>
-            <!-- <div class="swiper-button-prev !text-[#FC9A04] !left-0"></div>
-            <div class="swiper-button-next !text-[#FC9A04] !right-0"></div> -->
-          </div>
-        </div>
-      </div>
+    <!-- Grid Layout (Visible from sm and above) -->
+    <div class="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 px-4 shoutouts"></div>
 
-      <!-- Grid Layout (Visible from sm and above) -->
-      <div class="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 px-4 shoutouts"></div>
-      <a href="shoutouts.html"
-        class="bg-[#FC9A04] text-[#FFFFFF] text-sm sm:text-base font-semibold rounded-full px-6 py-3 hover:text-white transition">Load
-        More</a>
-      </div>
-    </section>
+    <!-- Pagination Controls -->
+    <div class="flex justify-center items-center space-x-4 mt-6">
+      <button id="prevPage" class="bg-[#FC9A04] text-[#FFFFFF] text-sm sm:text-base font-semibold rounded-full w-10 h-10 flex items-center justify-center hover:text-white transition disabled:bg-gray-400" disabled>
+        ←
+      </button>
+      <span id="pageInfo" class="text-[#121212] font-semibold"></span>
+      <button id="nextPage" class="bg-[#FC9A04] text-[#FFFFFF] text-sm sm:text-base font-semibold rounded-full w-10 h-10 flex items-center justify-center hover:text-white transition">
+        →
+      </button>
+    </div>
+  </div>
+</section>
 
     <!-- REWARDS SECTION  -->
     <section id="rewards" class="py-[100px] px-8 md:px-[50px] lg:px-[100px]  text-center">

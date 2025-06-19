@@ -5,6 +5,12 @@ const slideToLeft = document.querySelector('.slideToLeft');
 const slideToRight = document.querySelector('.slideToRight');
 const shoutoutSwipe = document.querySelector('.shoutoutSwipe');
 const shoutouts = document.querySelector('.shoutouts');
+const prevPageBtn = document.getElementById('prevPage');
+const nextPageBtn = document.getElementById('nextPage');
+const pageInfo = document.getElementById('pageInfo');
+
+let currentPage = 1;
+const itemsPerPage = 8;
 
 
 const serialize = (form) => {
@@ -173,70 +179,88 @@ const birthdatShouts = async () => {
 
 
 
-const shouts = async () => {
-  fetch('https://api.bigdaymi.com/api/frontend/fetch_frontend_shoutouts', {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json',
-    }
-  })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
+const shouts = async (page = 1) => {
+  try {
+    const response = await fetch(`https://api.bigdaymi.com/api/frontend/fetch_frontend_shoutouts?page=${page}&per_page=${itemsPerPage}`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
       }
-      return response.json();
-    })
-    .then(data => {
+    });
 
-      let innerHtmlSwiper = '';
-      let innerHtml = '';
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
 
+    const data = await response.json();
+    const shoutoutsData = data.data.data;
+    const totalPages = data.data.last_page || 1;
 
+    let innerHtmlSwiper = '';
+    let innerHtml = '';
 
-      data.data.data.forEach(el => {
-        innerHtmlSwiper += `
-            <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
-              <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-                <img src="${el.user.avatar}" alt="" class="rounded-xl w-full h-40 object-cover">
-                <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">${el.user.fname} ${el.user.lname}</span></p>
-              </div>
-              <div class="text-left p-4">
-                <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-                <p class="text-[#3D3D3D] text-sm">${el.message}</p>
-              </div>
-            </div>
-        `
-      });
-
-
-
-      data.data.data.forEach(el => {
-        innerHtml += `
-          <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
-            <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
-              <img src="${el.user.avatar}" alt="" class="rounded-xl w-full h-40 object-cover">
-              <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">${el.user.fname} ${el.user.lname}</span></p>
-            </div>
-            <div class="text-left p-4">
-              <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
-              <p class="text-[#3D3D3D] text-sm">${el.message}</p>
-            </div>
+    shoutoutsData.forEach(el => {
+      innerHtmlSwiper += `
+        <div class="swiper-slide bg-white rounded-xl w-72 flex-shrink-0">
+          <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+            <img src="${el.user.avatar}" alt="" class="rounded-xl w-full h-40 object-cover">
+            <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">${el.user.fname} ${el.user.lname}</span></p>
           </div>
-        `
-      });
+          <div class="text-left p-4">
+            <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+            <p class="text-[#3D3D3D] text-sm">${el.message}</p>
+          </div>
+        </div>
+      `;
 
-      shoutoutSwipe.innerHTML = innerHtmlSwiper
-      shoutouts.innerHTML = innerHtml
+      innerHtml += `
+        <div class="bg-[#FFFFFF] rounded-xl w-full max-w-xs mx-auto h-auto flex flex-col">
+          <div class="bg-[#F6F6F6] p-2.5 rounded-xl text-left">
+            <img src="${el.user.avatar}" alt="" class="rounded-xl w-full h-40 object-cover">
+            <p class="pt-2 text-[#6D6D6D]">Celebrant: <span class="font-semibold text-[#3D3D3D]">${el.user.fname} ${el.user.lname}</span></p>
+          </div>
+          <div class="text-left p-4">
+            <h2 class="text-[#FC9A04] font-semibold">Shoutout Message</h2>
+            <p class="text-[#3D3D3D] text-sm">${el.message}</p>
+          </div>
+        </div>
+      `;
+    });
 
-    })
-}
+    shoutoutSwipe.innerHTML = innerHtmlSwiper;
+    shoutouts.innerHTML = innerHtml;
+    pageInfo.textContent = `${page}/${totalPages}`;
+
+    // Update button states
+    prevPageBtn.disabled = page === 1;
+    nextPageBtn.disabled = page === totalPages;
+
+  } catch (error) {
+    console.error('Error fetching shoutouts:', error);
+  }
+};
+
+// Event listeners for pagination buttons
+prevPageBtn.addEventListener('click', () => {
+  if (currentPage > 1) {
+    currentPage--;
+    shouts(currentPage);
+  }
+});
+
+nextPageBtn.addEventListener('click', () => {
+  currentPage++;
+  shouts(currentPage);
+});
+
+
 
 
 // /frontend/fetch_frontend_shoutouts
 
 
 birthdatShouts()
-shouts()
+shouts(currentPage)
 
 
 // Closes the menu on scroll
